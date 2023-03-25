@@ -49,7 +49,6 @@ export class AmazonBadges extends LitElement {
 
     render() {
         return html`
-        //<h2>${this.school}</h2>
         <div class="wrapper">
             ${this.badges.map(badge => html`
             <div class="item">
