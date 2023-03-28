@@ -2,7 +2,7 @@ export default async function handler(request, res) {
 
     const list = [
         {
-            "imgURL": "https://media.licdn.com/dms/image/D4D03AQHzfmbMoNNrww/profile-displayphoto-shrink_800_800/0/1671642107740?e=2147483647&v=beta&t=ZC1J3poYWxvIe5KsDFsObVcXQlh2-mv5mhIjjwOOkkk",
+            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
             "author": "Spenser McLaughlin",
             "professorName": "Professor Bryan Ollendyke",
             "funFact": "This is a picture of a Bing user",
@@ -12,7 +12,7 @@ export default async function handler(request, res) {
             "shadowColor": "false"
         },
         {
-            "imgURL": "https://media.licdn.com/dms/image/D4D03AQHzfmbMoNNrww/profile-displayphoto-shrink_800_800/0/1671642107740?e=2147483647&v=beta&t=ZC1J3poYWxvIe5KsDFsObVcXQlh2-mv5mhIjjwOOkkk",
+            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
             "author": "Spenser McLaughlin",
             "professorName": "Professor Bryan Ollendyke",
             "funFact": "This is a picture of a Bing user",
@@ -22,7 +22,7 @@ export default async function handler(request, res) {
             "shadowColor": "false"
         },
         {
-            "imgURL": "https://media.licdn.com/dms/image/D4D03AQHzfmbMoNNrww/profile-displayphoto-shrink_800_800/0/1671642107740?e=2147483647&v=beta&t=ZC1J3poYWxvIe5KsDFsObVcXQlh2-mv5mhIjjwOOkkk",
+            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
             "author": "Spenser McLaughlin",
             "professorName": "Professor Bryan Ollendyke",
             "funFact": "This is a picture of a Bing user",
@@ -32,7 +32,7 @@ export default async function handler(request, res) {
             "shadowColor": "false"
         },
         {
-            "imgURL": "https://media.licdn.com/dms/image/D4D03AQHzfmbMoNNrww/profile-displayphoto-shrink_800_800/0/1671642107740?e=2147483647&v=beta&t=ZC1J3poYWxvIe5KsDFsObVcXQlh2-mv5mhIjjwOOkkk",
+            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
             "author": "Spenser McLaughlin",
             "professorName": "Professor Bryan Ollendyke",
             "funFact": "This is a picture of a Bing user",
@@ -42,7 +42,7 @@ export default async function handler(request, res) {
             "shadowColor": "false"
         },
         {
-            "imgURL": "https://media.licdn.com/dms/image/D4D03AQHzfmbMoNNrww/profile-displayphoto-shrink_800_800/0/1671642107740?e=2147483647&v=beta&t=ZC1J3poYWxvIe5KsDFsObVcXQlh2-mv5mhIjjwOOkkk",
+            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
             "author": "Spenser McLaughlin",
             "professorName": "Professor Bryan Ollendyke",
             "funFact": "This is a picture of a Bing user",

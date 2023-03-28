@@ -42,16 +42,31 @@
       background-color: white;
       color: #a71c19;
     }
+    
+    .search-container {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      max-width: 500px;
+      margin: 10 auto;
+    }
+
+    .search-container input {
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      background-color: #f2f2f2;
+    }
 
   </style>
   <title>amazon-badges</title>
 </head>
 
 <body>
-  <div class>
-    <input type="text" id="search" placeholder="Search"/>
-  </div>
-  <badge-list></badge-list>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search...">
+    </div>
+    <badge-list></badge-list>
 
   <script type="module">
     import "./src/amazon-badges.js";

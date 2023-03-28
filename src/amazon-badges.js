@@ -1,27 +1,18 @@
 import { LitElement, html, css } from 'lit';
 
-const prof = new URL('../assets/professoro.jpg', import.meta.url).href;
-
 export class AmazonBadges extends LitElement {
   static get properties() {
     return {
       author: { type: String},
       professorName: { type: String, reflect: true},
       funFact: { type: String},
-      topText: { type: String},
-      bottomText: { type: String},
       imgURL: { type: String},
       description: {type: String},
-      shadowColor: {type: Boolean, reflect: true, attribute: 'shadow-color'},
     };
   }
 
   static get styles() {
     return css`
-      :host([shadow-color]) .card {
-        box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
-      }
-
       :host {
         display: inline-block;
       }
@@ -37,12 +28,6 @@ export class AmazonBadges extends LitElement {
         margin: 10px;
         border-radius: 25px;
       }
-
-      /* @media screen and (min-width: 800px) {
-        .btn {
-          visibility: hidden;
-        }
-      } */
       
       @media screen and (max-width: 500px) {
         .card {
@@ -65,11 +50,8 @@ export class AmazonBadges extends LitElement {
     this.author = 'Spenser McLaughlin';
     this.professorName = 'Professor Bryan Ollendyke';
     this.funFact = 'This is a picture of a Bing user';
-    this.topText = 'Imagine being IT competent';
-    this.bottomText = 'But using BING';
-    this.imgURL = 'https://avatars.githubusercontent.com/u/329735?v=4';
+    this.imgURL = 'https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj';
     this.description = 'Details';
-    this.shadowColor = false;
   }
 
   toggleDetails() {
@@ -81,14 +63,10 @@ export class AmazonBadges extends LitElement {
       <div>
         <div class="card" id="card1">
           <h2 id="header">${this.professorName}</h2>
-          <h3>By ${this.author}</h3>
-          <meme-maker
-            top-text="${this.topText}"             
-            image-url="${this.imgURL}"
-            bottom-text="${this.bottomText}"
-          ></meme-maker>
+          <h3>By ${this.author}</h3>             
+            <img src="imgURL">
           <details class="details" id="details">
-            <summary>${this.description}</summary>
+          <summary>${this.description}</summary>
             <div>
               <slot name="bing"></slot>
             </div>
