@@ -8,14 +8,14 @@ export class AmazonBadges extends LitElement {
     static get properties() {
         return {
             badges: { type: Array },
-            //school: { type: String }
+            //org: { type: String }
         }
     }
 
     constructor() {
         super();
         this.badges = [];
-        //this.school = 'Penn State';
+        //this.org = 'Penn State';
         this.updateList();
     }
 
@@ -34,15 +34,9 @@ export class AmazonBadges extends LitElement {
 
     static get styles() {
         return css`
-        :host {
-            /* display: block; */
-        }
         .wrapper {
             border: 2px solid overscroll-behavior-block;
             /* display: flex; */
-        }
-        .item {
-            /* display: inline-block; */
         }
     `;
     }

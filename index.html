@@ -73,5 +73,17 @@
     import "./src/badge-list.js";
   </script>
   <!-- <script type="module" src="./src/amazon-badges.js"></script> -->
+  <script>
+    const searchBar = document.getElementById("search-bar");
+    let searchQuery;
+
+    searchBar.addEventListener("keydown", (e) => {
+        if (e.key == "Enter" && searchBar.value != "") {
+            location.href = './src/badge-list.js';
+            searchQuery = searchBar.value;
+        }
+        console.log(searchQuery)
+    });
+  </script>
 </body>
 </html>
