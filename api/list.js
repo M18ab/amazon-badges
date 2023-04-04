@@ -2,54 +2,40 @@ export default async function handler(request, res) {
 
     const list = [
         {
-            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
-            "author": "Spenser McLaughlin",
-            "professorName": "Professor Bryan Ollendyke",
-            "funFact": "This is a picture of a Bing user",
-            "topText": "Imagine being IT competent",
-            "bottomText": "But using BING",
-            "description": "Details",
-            "shadowColor": "false"
+            "badgeHeader": "Amazon I AM McLaughlin",
+            "badgeImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
+            "badgeDesc": "Create a I AM account with MFA enabled and Admin permissions",
+            "creator": "Joshua Hantman",
+            "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
+            "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
+            "timeToComplete": "2.0 hours"
         },
         {
-            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
-            "author": "Spenser McLaughlin",
-            "professorName": "Professor Bryan Ollendyke",
-            "funFact": "This is a picture of a Bing user",
-            "topText": "Imagine being IT competent",
-            "bottomText": "But using BING",
-            "description": "Details",
-            "shadowColor": "false"
+            "badgeHeader": "Amazon I AM McLaughlin",
+            "badgeImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
+            "badgeDesc": "Create a I AM account with MFA enabled and Admin permissions",
+            "creator": "Joshua Hantman",
+            "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
+            "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
+            "timeToComplete": "2.0 hours"
         },
         {
-            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
-            "author": "Spenser McLaughlin",
-            "professorName": "Professor Bryan Ollendyke",
-            "funFact": "This is a picture of a Bing user",
-            "topText": "Imagine being IT competent",
-            "bottomText": "But using BING",
-            "description": "Details",
-            "shadowColor": "false"
+            "badgeHeader": "Amazon I AM McLaughlin",
+            "badgeImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
+            "badgeDesc": "Create a I AM account with MFA enabled and Admin permissions",
+            "creator": "Joshua Hantman",
+            "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
+            "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
+            "timeToComplete": "2.0 hours"
         },
         {
-            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
-            "author": "Spenser McLaughlin",
-            "professorName": "Professor Bryan Ollendyke",
-            "funFact": "This is a picture of a Bing user",
-            "topText": "Imagine being IT competent",
-            "bottomText": "But using BING",
-            "description": "Details",
-            "shadowColor": "false"
-        },
-        {
-            "imgURL": "https://yt3.googleusercontent.com/1LdVMQLDT9EaKcK0pYG0JOjAScB4qCt1cB_zI1LIFzvpknX8TsuLjkqJKSuDDoP2sfTJOnEXkbI=s900-c-k-c0x00ffffff-no-rj",
-            "author": "Spenser McLaughlin",
-            "professorName": "Professor Bryan Ollendyke",
-            "funFact": "This is a picture of a Bing user",
-            "topText": "Imagine being IT competent",
-            "bottomText": "But using BING",
-            "description": "Details",
-            "shadowColor": "false"
+            "badgeHeader": "Amazon I AM McLaughlin",
+            "badgeImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
+            "badgeDesc": "Create a I AM account with MFA enabled and Admin permissions",
+            "creator": "Joshua Hantman",
+            "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
+            "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
+            "timeToComplete": "2.0 hours"
         }
     ];
     res.setHeader('Cache-Control', 'max-age=0, s-maxage=1800');

@@ -8,55 +8,285 @@
   <base href="/">
 
   <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
+    html,    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        background: #e9ecf3;
+        color: #333333;
+        font-family: "effra", sans-serif;
+        padding: 0px !important;
+        margin: 0px !important;
+        font-size: 14px;
+        direction: ltr;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 2;
+        color: #333333;
+        background-color: #fff;
+        margin: 0;
+      }
+
+      .badge {
+        position: relative;
+        border: 1px solid blue;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1px;
+        max-width: 800px;
+        overflow: hidden;
+      }
+
+      .badge::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background-color: #3e98d3;
+      }
+      .badge-header {
+        padding: 0px 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #cfe6f4;
+        cursor: pointer;
+      }
+
+      .badge-title {
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .badge-arrow {
+        border: solid #333;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+      }
+
+      .badge-content {
+        display: none;
+        padding: 1px 1px;
+        align-items: centre
+      }
+
+      .badge.expanded .badge-arrow {
+        transform: rotate(-135deg);
+      }
+              /* Style for white box */
+      .step-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        background-color: grey;
+        z-index: 0;
+      }
+      .search-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+    .search-input {
+        padding: 10px;
+        width: 50%;
+        font-size: 1rem;
     }
 
-    
-    .two {
-      display: flex;
-      flex-direction: row;
+    /* Style for badges */
+    .badge {
+        position: relative;
+        width: 80%;
+        background-color: #cfe6f4;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        transition: max-height 0.5s ease-in-out;
+        margin-left: 10%;
+      
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 10px;
+        max-height: 80px;
+        justify-content: center;
     }
 
-    button {
-      text-transform: uppercase;
-      padding: 8px 8px;
-      margin: 10px;
-      border: 2px dashed white;
-      background-color: #a71c19;
-      color: white;
+    .badge::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        background-color: #3e98d3;
     }
 
-    button:hover {
-      border: 2px dashed #a71c19;
-      background-color: white;
-      color: #a71c19;
+    /* Style for expanded badges */
+    .badge.expanded {
+        max-height: 1000px;
+        z-index: 1;
+    }
+    /* Style for badge content */
+    .badge-content {
+        padding: 0;
+        display: none;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 0px;
+        width: 110%;
+    }
+    /* Style for badge header */
+    .badge-header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /* Style for badge image */
+    .badge-image {
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    /* Style for badge arrow */
+    .badge-arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        margin-right: 5px;
+    }
+    /* Style for step-row */
+    .step-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        background-color: #f0f0f0;
+        z-index: 2 ;
     }
 
-    button:focus {
-      border: 2px dashed #a71c19;
-      background-color: white;
-      color: #a71c19;
-    }
-    
-    .search-container {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      max-width: 500px;
-      margin: 10 auto;
+    .activity-type img {
+        width: 30px;
+        height: 30px;
+    }.search-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
     }
 
-    .search-container input {
-      padding: 10px;
-      width: 100%;
-      border-radius: 5px;
-      border: none;
-      background-color: #f2f2f2;
+    .search-input {
+        padding: 10px;
+        width: 50%;
+        font-size: 1rem;
     }
+
+    /* Style for badges */
+    .badge {
+        position: relative;
+        width: 80%;
+        background-color: #cfe6f4;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        transition: max-height 0.5s ease-in-out;
+        margin-left: 10%;
+      
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 10px;
+        max-height: 80px;
+        justify-content: center;
+    }
+
+    .badge::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        background-color: #3e98d3;
+    }
+
+    /* Style for expanded badges */
+    .badge.expanded {
+        max-height: 1000px;
+        z-index: 1;
+    }
+    /* Style for badge content */
+    .badge-content {
+        padding: 0;
+        display: none;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 0px;
+        width: 110%;
+    }
+    /* Style for badge header */
+    .badge-header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /* Style for badge image */
+    .badge-image {
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    /* Style for badge arrow */
+    .badge-arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        margin-right: 5px;
+    }
+    /* Style for step-row */
+    .step-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+        background-color: #f0f0f0;
+        z-index: 2 ;
+    }
+
+    .activity-type img {
+        width: 30px;
+        height: 30px;
+    }      
+
 
   </style>
   <title>amazon-badges</title>
@@ -64,7 +294,7 @@
 
 <body>
     <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search...">
+      <input type="search" class="search-input" placeholder="Search...">
     </div>
     <badge-list></badge-list>
 
@@ -83,6 +313,18 @@
             searchQuery = searchBar.value;
         }
         console.log(searchQuery)
+    });
+
+
+    // Add click event listener to each badge header
+    const badgeHeaders = document.querySelectorAll('.badge-header');
+    badgeHeaders.forEach(header => {
+        header.addEventListener('click', event => {
+            const badge = event.target.closest('.badge');
+            badge.classList.toggle('expanded');
+            const content = badge.querySelector('.badge-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
     });
   </script>
 </body>

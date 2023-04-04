@@ -46,7 +46,7 @@ export class AmazonBadges extends LitElement {
         <div class="wrapper">
             ${this.badges.map(badge => html`
             <div class="item">
-                <amazon-badges author="${badge.author}" professorName="${badge.professorName}" funFact="${badge.funFact}" topText="${badge.topText}" bottomText="${badge.bottomText}" imgURL="${badge.imgURL}"  description="${badge.description}"  shadowColor="${badge.shadowColor}"></amazon-badges>
+                <amazon-badges badgeHeader="${badge.badgeHeader}" badgeImage="${badge.badgeImage}" badgeDesc="${badge.badgeDesc}" creator="${badge.creator}" creatorImage="${badge.creatorImage}" mediaImg="${badge.mediaImg}"  timeToComplete="${badge.timeToComplete}"></amazon-badges>
             </div>
             `)}
         </div>
