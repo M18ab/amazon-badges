@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     const search = req.query.search || '';
-    const list = [
+    var list = [
         {
             "badgeHeader": "Amazon Cognito",
             "badgeImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png",
