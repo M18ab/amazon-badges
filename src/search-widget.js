@@ -2,12 +2,11 @@ import { LitElement, html, css } from 'lit';
 import "@lrnwebcomponents/simple-icon/simple-icon.js";
 import "@lrnwebcomponents/simple-icon/lib/simple-icons.js";
 
-
 export class SearchWidget extends LitElement {
   static get properties() {
     return {
-      value: { type: String }, 
-    };
+      value: { type: String },
+    }
   }
 
   static get styles() {
@@ -25,7 +24,7 @@ export class SearchWidget extends LitElement {
 
   constructor() {
     super();
-    this.value = 'Default';
+    this.value = 'Default Value';
   }
 
   render() {

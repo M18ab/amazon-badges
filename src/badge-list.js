@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import "./amazon-badges.js";
+import "./search-widget.js";
 
 export class AmazonBadges extends LitElement {
     static get tag() {
@@ -16,7 +17,9 @@ export class AmazonBadges extends LitElement {
         super();
         this.badges = [];
         //this.org = 'Penn State';
-        // this.updateList();
+        this.getSearchResults().then((results) => {
+            this.badges = results;
+        });
     }
 
     // updateList() {
