@@ -327,7 +327,6 @@ export class AmazonBadges extends LitElement {
                       <div class="badge-completion-time">Approximate time to complete: ${this.timeToComplete}</div>
                   </div>
               </div>
-              <!-- Add the table with the step-row -->
               <table>
                   <tbody>
                       <tr class="step-row">

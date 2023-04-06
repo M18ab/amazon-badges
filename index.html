@@ -304,28 +304,18 @@
   </script>
   <!-- <script type="module" src="./src/amazon-badges.js"></script> -->
   <script>
-    const searchBar = document.getElementById("search-bar");
-    let searchQuery;
-
-    searchBar.addEventListener("keydown", (e) => {
-        if (e.key == "Enter" && searchBar.value != "") {
-            location.href = './src/badge-list.js';
-            searchQuery = searchBar.value;
-        }
-        console.log(searchQuery)
-    });
-
-
+    document.addEventListener('DOMContentLoaded', () => {
     // Add click event listener to each badge header
     const badgeHeaders = document.querySelectorAll('.badge-header');
     badgeHeaders.forEach(header => {
-        header.addEventListener('click', event => {
-            const badge = event.target.closest('.badge');
-            badge.classList.toggle('expanded');
-            const content = badge.querySelector('.badge-content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
+      header.addEventListener('click', event => {
+        const badge = event.target.closest('.badge');
+        badge.classList.toggle('expanded');
+        const content = badge.querySelector('.badge-content');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
     });
+  });
   </script>
 </body>
 </html>
