@@ -16,21 +16,21 @@ export class AmazonBadges extends LitElement {
         super();
         this.badges = [];
         //this.org = 'Penn State';
-        this.updateList();
+        // this.updateList();
     }
 
-    updateList() {
-        const address = '../api/list';
-        fetch(address).then((response) => {
-            if (response.ok) {
-                return response.json()
-            }
-            return [];
-        })
-        .then((data) => {
-            this.badges = data;
-        });
-    }
+    // updateList() {
+    //     const address = '../api/list';
+    //     fetch(address).then((response) => {
+    //         if (response.ok) {
+    //             return response.json()
+    //         }
+    //         return [];
+    //     })
+    //     .then((data) => {
+    //         this.badges = data;
+    //     });
+    // }
 
     static get styles() {
         return css`
@@ -41,8 +41,29 @@ export class AmazonBadges extends LitElement {
     `;
     }
 
+    async getSearchResults(value = '') {
+        const address = `/api/list?search=${value}`;
+        const results = await fetch(address).then((response) => {
+            if (response.ok) {
+                return response.json()
+            }
+            return [];
+        })
+        .then((data) => {
+            return data;
+        });
+
+        return results;
+    }
+
+    async _handleSearchEvent(e) {
+        const term = e.detail.value;
+        this.badges = await this.getSearchResults(term);
+    }
+
     render() {
         return html`
+        <search-widget @value-changed="${this._handleSearchEvent}"></search-widget>
         <div class="wrapper">
             ${this.badges.map(badge => html`
             <div class="item">
