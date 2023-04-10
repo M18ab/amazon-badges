@@ -302,18 +302,21 @@
   </script>
   <!-- <script type="module" src="./src/amazon-badges.js"></script> -->
   <script>
+    function toggleBadgeContent(arrowElement) {
+    const badge = arrowElement.closest('.badge');
+    badge.classList.toggle('expanded');
+    const content = badge.querySelector('.badge-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+     }
+
     document.addEventListener('DOMContentLoaded', () => {
-    // Add click event listener to each badge header
-    const badgeHeaders = document.querySelectorAll('.badge-header');
-    badgeHeaders.forEach(header => {
-      header.addEventListener('click', event => {
-        const badge = event.target.closest('.badge');
-        badge.classList.toggle('expanded');
-        const content = badge.querySelector('.badge-content');
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      document.body.addEventListener('click', (event) => {
+        const arrowElement = event.target.closest('.badge-arrow');
+        if (arrowElement) {
+          toggleBadgeContent(arrowElement);
+        }
       });
     });
-  });
   </script>
 </body>
 </html>

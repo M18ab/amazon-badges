@@ -6,6 +6,7 @@
         "creator": "Joshua Hantman",
         "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
         "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-        "timeToComplete": "2.0 hours"
+        "timeToComplete": "2.0 hours",
+        "secDesc": "Create a User Pool in Amazon Cognito"
     }
 ]

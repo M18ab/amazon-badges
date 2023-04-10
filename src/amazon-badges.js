@@ -305,6 +305,7 @@ export class AmazonBadges extends LitElement {
     this.creatorImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU'
     this.mediaImg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU'
     this.timeToComplete = '2.0 hours';
+    this.secDesc = 'Create a User Pool in Amazon Cognito ';
   }
 
   render() {
@@ -314,7 +315,7 @@ export class AmazonBadges extends LitElement {
           <div class="badge-header">
               <img src="${this.badgeImage}" alt="Image for Badge 1" class="badge-image">
               <h1>${this.badgeHeader}</h1>
-              <div class="badge-arrow"></div>
+              <div class="badge-arrow" onclick="toggleBadgeContent(this)"></div>
           </div>
           <div class="badge-content">
               <div class="badge-details">
@@ -334,7 +335,7 @@ export class AmazonBadges extends LitElement {
                               <img src= "${this.mediaImg}" alt="Listicon mediatype video gray" width="30" height="30">
                           </td>
                           <td class="step-title">
-                              Create a User Pool in Amazon Cognito
+                            ${this.secDesc}
                           <!-- </td>
                           <td class="time-to-complete">
                           ${this.timeToComplete}

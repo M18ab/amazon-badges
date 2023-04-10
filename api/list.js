@@ -8,7 +8,8 @@ export default async function handler(req, res) {
             "creator": "Spenser McLaughlin",
             "creatorImage": "https://media.licdn.com/dms/image/C5603AQGzgroDW50Cdg/profile-displayphoto-shrink_800_800/0/1663356795733?e=2147483647&v=beta&t=BDlHskEDUe6mtCFu3yBMFRPZFdKfEeHtVUA0a5N_cg0",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "4.0 hours"
+            "timeToComplete": "4.0 hours",
+            "secDesc": "Create a User Pool in Amazon Cognito"
         },
         {
             "badgeHeader": "Amazon I AM",
@@ -17,7 +18,8 @@ export default async function handler(req, res) {
             "creator": "Joshua Hantman",
             "creatorImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfHxMg2tu5sI0tC1kmsjE4vttHT2EMv3MxQ&usqp=CAU",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "2.0 hours"
+            "timeToComplete": "2.0 hours",
+            "secDesc": "Amazon I AM bro?"
         },
         {
             "badgeHeader": "Signing up for AWS Web Services",
@@ -26,7 +28,8 @@ export default async function handler(req, res) {
             "creator": "Anish Nangare",
             "creatorImage": "https://media.licdn.com/dms/image/C5603AQFXbg16WDVwCg/profile-displayphoto-shrink_800_800/0/1603713522042?e=2147483647&v=beta&t=1jtcZxXz_ZmX6U7gb5TIvK3CQzG2vidQIYVZSHhX0fY",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "1.0 hours"
+            "timeToComplete": "1.0 hours",
+            "secDesc": "Signing up for Amazon Web Services Web Services?"
         },
         {
             "badgeHeader": "AWS-LAMBDA Phase 1",
@@ -35,7 +38,8 @@ export default async function handler(req, res) {
             "creator": "Bryan Ollendyke",
             "creatorImage": "https://assets.powerplaystats.com/medias/4838.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "6.0 hours"
+            "timeToComplete": "6.0 hours",
+            "secDesc": "Lambda expressions :("
         },
         {
             "badgeHeader": "Amazon S3 Phase 1",
@@ -44,7 +48,9 @@ export default async function handler(req, res) {
             "creator": "Jeffrey Preston Bezos",
             "creatorImage": "https://assets.wired.com/photos/w_1720/wp-content/uploads/2019/01/Culture_GeeksGuide_Bezos.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "7.0 hours"
+            "timeToComplete": "7.0 hours",
+            "secDesc": "Phase II when?"
+
         },
         {
             "badgeHeader": "Amazon GameSparks",
@@ -53,7 +59,8 @@ export default async function handler(req, res) {
             "creator": "Griffin Parry",
             "creatorImage": "https://pbs.twimg.com/profile_images/1488475015616077825/fH45IrjU_400x400.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "3.0 hours"
+            "timeToComplete": "3.0 hours",
+            "secDesc": "Gaming time"
         },
         {
             "badgeHeader": "AWS Fargate",
@@ -62,7 +69,8 @@ export default async function handler(req, res) {
             "creator": "Deepak Singh",
             "creatorImage": "https://media.licdn.com/dms/image/C5603AQFC7wwBMtVCog/profile-displayphoto-shrink_800_800/0/1645208699081?e=2147483647&v=beta&t=2N2nfTLKrpSKrt17El6nWIBRPLBD2hhyzrIXe3EQR1Y",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "4.0 hours"
+            "timeToComplete": "4.0 hours",
+            "secDesc": "AWS Closegate when?"
         },
         {
             "badgeHeader": "Amazon ECR",
@@ -71,7 +79,8 @@ export default async function handler(req, res) {
             "creator": "Andy Jassy",
             "creatorImage": "https://upload.wikimedia.org/wikipedia/commons/0/07/Andy_Jassy.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "10.0 hours"
+            "timeToComplete": "10.0 hours",
+            "secDesc": "I'm sorry, what?"
         },
         {
             "badgeHeader": "Amazon EC2",
@@ -80,7 +89,9 @@ export default async function handler(req, res) {
             "creator": "Brian T. Olsavsky",
             "creatorImage": "https://s2.q4cdn.com/299287126/files/images/officers/Brian_olsavsky.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "4.0 hours"
+            "timeToComplete": "4.0 hours",
+            "secDesc": "EC3 is coming"
+
         },
         {
             "badgeHeader": "Amazon CloudWatch",
@@ -89,7 +100,9 @@ export default async function handler(req, res) {
             "creator": "Doug Herrington",
             "creatorImage": "https://s2.q4cdn.com/299287126/files/images/officers/Doug-Herrington.jpg",
             "mediaImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZYVKO1Rkw1BPAjZRNy8pVLxofK-eq35bjsQ&usqp=CAU",
-            "timeToComplete": "7.0 hours"
+            "timeToComplete": "7.0 hours",
+            "secDesc": "Watching clouds"
+
         }
     ];
     list.map((badge) => {
