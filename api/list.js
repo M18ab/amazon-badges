@@ -106,7 +106,7 @@ export default async function handler(req, res) {
         }
     ];
     list.map((badge) => {
-        badge.index = badge.badgeHeader.toLowerCase() + " " + badge.badgeDesc.toLowerCase() + " " + badge.creator.toLowerCase();
+        badge.index = badge.badgeHeader.toLowerCase() + " " + badge.badgeDesc.toLowerCase() + " " + badge.creator.toLowerCase() + " " + badge.secDesc.toLowerCase();
       });
       list = list.filter((badge) => {
         return badge.index.indexOf(search.toLowerCase()) > -1;
