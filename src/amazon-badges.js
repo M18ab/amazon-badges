@@ -10,6 +10,7 @@ export class AmazonBadges extends LitElement {
       creatorImage: {type: String},
       mediaImg: {type: String},
       timeToComplete: {type: String},
+      secDesc: {type: String},
     };
   }
 
