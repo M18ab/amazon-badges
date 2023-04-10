@@ -94,6 +94,11 @@ export class AmazonBadges extends LitElement {
         align-items: centre
       }
 
+      .badge-content img {
+        width: 50px;
+        height: 50px;
+      }
+
       .badge.expanded .badge-arrow {
         transform: rotate(-135deg);
       }
